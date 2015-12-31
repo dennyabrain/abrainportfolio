@@ -2,6 +2,20 @@
 	background-color: red
 }
 
+a:link{
+	text-decoration:none;
+	color:#0468BF;
+}
+
+a:visited{
+	text-decoration:none;
+	color:#0468BF;
+}
+
+{
+	margin: 0; 
+	padding: 0; 
+}
 body { 
 	font-size: 62.5%; 
 	font-family: 'Lucida Grande', Helvetica, sans-serif;
