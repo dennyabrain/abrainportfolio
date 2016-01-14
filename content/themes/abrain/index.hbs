@@ -1,12 +1,24 @@
+<!DOCTYPE HTML>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <link rel="stylesheet" type="text/css"  href="{{asset "style.css"}}" />
 <script type="text/javascript" src="{{asset "jquery.js"}}"></script>
+<script type="text/javascript" src="{{asset "Tone.js"}}"></script>
 <script type="text/javascript" src="{{asset "script.js"}}"></script>
+<!--<script type="text/javascript" src="{{asset "denny.js"}}"></script>-->
+<div id="container">
 <div id="content">
 	{{#foreach posts}}
 		<div class="box">
-			<h2><a href={{url absolute="true"}}>{{{title}}}</a></h2>
-			<h3>{{tags}}</h3>
+			<h2 class="title"><a href={{url absolute="true"}}>{{{title}}}</a></h2>
+			</br>
+			<h3 class="tags"><span>{{tags}}</span></h3>
 			{{#if image}}<img class="image" src="{{image}}">{{/if}}
 		</div>
 	{{/foreach}}
+</div>
+<div id="about">
+	about me
+	<div id="close"> X
+	</div>
+</div>
 </div>

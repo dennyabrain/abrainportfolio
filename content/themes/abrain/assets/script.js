@@ -11,8 +11,8 @@ window.onload=function(){
 		var h=$(this).children('img').height();
 		$(this).children('img').css("height","0px");
 
-		var newHeight=500;
-		var newWidth=500*(w/h);
+		var newHeight=$(window).height()*4/5;
+		var newWidth=newHeight*(w/h);
 
 		$(this).css({
 			width:newWidth,
@@ -28,4 +28,13 @@ window.onload=function(){
 		$(this).css("background-size",''+newWidth+'px '+newHeight+'px');
 		$(this).children('img').css("height","0px");
 	});
+
+	//Setup About me page
+	$(document).click(function(){
+		$("#about").show();
+	});
+	$("#close").click(function(){
+		$("#about").hide();
+	});
+	return 
 }

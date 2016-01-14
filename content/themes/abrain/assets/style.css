@@ -27,7 +27,7 @@ tr {
 	vertical-align: top;
 }
 .box { 
-	width: 1000px; 
+
 }
 p { 
 	font-size: 1.2em; 
@@ -38,21 +38,47 @@ h1 {
 	font-size: 4.0em;
 	letter-spacing: -1px; 
 	color: #ccc; 
+	display: inline-block;
 }
-h2 { 
+.title { 
 	font-family: Sans-serif; 
-	font-size: 2.0em;
+	font-size: 3.0em;
 	background-color:#F2E205;
 	letter-spacing: -1px;
 	padding:0px 0px 5px 5px; 
 	color: #0468BF; 
+	display: inline-block;
 }
-h3 { 
+.tags { 
 	font-family: Sans-serif; 
-	font-size: 1.0em;
-	background-color:#72BF6F;
+	font-size: 2.0em;
 	letter-spacing: -1px;
 	padding:0px 0px 5px 5px;  
 	color: #0468BF; 
-	margin-top:-28px;
+	white-space: pre-wrap;
+	display: inline-block;
+	margin-top:-1em;
+}
+
+.tags span{
+	background-color:#72BF6F;
+	padding-right:5px;
+	box-shadow: 0.25em 0 0 #72BF6F,-0.25em 0 0 #72BF6F;
+}
+
+#about{
+	background-color:red;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+}
+#close{
+	position:absolute;
+	top:0;
+	right:0;
+	font-size:5em;
+	background-color:blue;
 }
