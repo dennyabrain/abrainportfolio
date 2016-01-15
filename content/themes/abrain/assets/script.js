@@ -31,10 +31,12 @@ window.onload=function(){
 
 	//Setup About me page
 	$(document).click(function(){
-		$("#about").show();
+		$("#about").slideToggle("fast");	
 	});
-	$("#close").click(function(){
-		$("#about").hide();
+	$("#close").click(function(e){
+		//e.preventDefault();
+		$("#about").slideUp();
+		console.log("clicked");
 	});
 	return 
 }
