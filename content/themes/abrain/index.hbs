@@ -5,8 +5,11 @@
 <script type="text/javascript" src="{{asset "Tone.js"}}"></script>
 <script type="text/javascript" src="{{asset "script.js"}}"></script>
 <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
-<!--<script type="text/javascript" src="{{asset "denny.js"}}"></script>-->
+<script type="text/javascript" src="{{asset "denny.js"}}"></script>
 <div id="container">
+<div class="navbar">
+	<h1 id="info">+</h1>
+</div>
 <div id="content">
 	{{#foreach posts}}
 		<div class="box">
@@ -18,8 +21,14 @@
 	{{/foreach}}
 </div>
 <div id="about">
-	<p>Denny George is a creative technologist who likes to create digital tools for creative expression. A lot of his work currently is in the realm of live performance.</p>
-	<div id="close"> X
+	<div id="aboutContainer">
+		<img src="{{asset "eyes.gif"}}"/>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor blandit mi non interdum. Donec nulla nisl, volutpat quis justo sit amet, molestie mollis velit. Quisque scelerisque sapien imperdiet, ultrices elit at, egestas urna. Cras hendrerit nisi ex, ut fringilla risus maximus non. Morbi euismod tincidunt ante quis lacinia. Suspendisse tincidunt nisi at velit pretium suscipit. </p>
+		<div id="social">
+			<a href="https://github.com/dennyabrain" taget="_blank"><img src="{{asset "github.svg"}}"></a>
+			<a href="https://twitter.com/_abrain_" target="_blank"><img src="{{asset "twitter.svg"}}"></a>
+			<a href="https://www.instagram.com/dennyabrain/" target="_blank"><img src="{{asset "instagram.svg"}}"></a>
+		</div>
 	</div>
 </div>
 </div>

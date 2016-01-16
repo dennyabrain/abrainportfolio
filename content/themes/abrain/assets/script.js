@@ -11,7 +11,7 @@ window.onload=function(){
 		var h=$(this).children('img').height();
 		$(this).children('img').css("height","0px");
 
-		var newHeight=$(window).height()*4/5;
+		var newHeight=$(window).height()*2/3;
 		var newWidth=newHeight*(w/h);
 
 		$(this).css({
@@ -30,12 +30,13 @@ window.onload=function(){
 	});
 
 	//Setup About me page
-	$(document).click(function(){
-		$("#about").slideToggle("fast");	
+	$("#info").click(function(){
+		$("#about").show();
+		//$("#info").css("color","red");
 	});
-	$("#close").click(function(e){
+	$("#about").click(function(e){
 		//e.preventDefault();
-		$("#about").slideUp();
+		$("#about").hide();
 		console.log("clicked");
 	});
 	return 

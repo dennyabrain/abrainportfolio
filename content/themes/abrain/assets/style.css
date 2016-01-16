@@ -65,20 +65,20 @@ h1 {
 }
 
 #about{
-	background-color:#F2E205;
+	background-color:rgba(242,226,5,0.9);
 	position:fixed;
 	top:0;
 	left:0;
 	width:100%;
 	height:100%;
 	display:none;
+	opacity:80%;
 }
 #close{
 	position:absolute;
 	top:0;
 	right:0;
-	font-size:5em;
-	background-color:blue;
+	font-size:3em;
 }
 
 #about p{
@@ -91,3 +91,41 @@ h1 {
 	height:20%;
 	color:#0468BF;
 }
+
+/*THE ABOUT PAGE */
+
+#aboutContainer{
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5%;
+}
+
+#blurb{
+	
+}
+
+#aboutContainer img{
+	width:33.333%;
+	float:left;
+}
+
+#aboutContainer p{
+	width:33.333%;
+	float:left;
+	margin-left:1%;
+}
+
+#social{
+	float:left;
+	display:inline;
+}
+
+#social img{
+	width:20px;
+	height:auto;
+	margin:10px 10px 10px 10px;
+	display:inline;
+}
+
+/*///////////////////////////*/
