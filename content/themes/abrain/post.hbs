@@ -1,7 +1,12 @@
-<link rel="stylesheet" type="text/css"  href="{{asset "style.css"}}" />
+<!DOCTYPE HTML>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="stylesheet" type="text/css"  href="{{asset "stylePost.css"}}" />
 <script type="text/javascript" src="{{asset "jquery.js"}}"></script>
 <script type="text/javascript" src="{{asset "script.js"}}"></script>
-{{#post}}
-	<h2>{{title}}</h2>
-	{{content}}
-{{/post}}
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<div id="container">
+	{{#post}}
+		<h2>{{title}}</h2>
+		{{content}}
+	{{/post}}
+</div>
