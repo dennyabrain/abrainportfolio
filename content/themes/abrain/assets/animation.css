@@ -1,0 +1,13 @@
+@keyframes square-to-circle{
+	0%{
+		margin-top:-10px;
+	}
+	
+	100%{
+		margin-top:10px;
+	}
+}
+
+.box:hover{
+	animation: square-to-circle 0.25s infinite alternate;
+}
